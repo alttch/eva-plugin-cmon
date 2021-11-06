@@ -24,7 +24,6 @@ flags = SimpleNamespace(ready=False)
 
 logger = pa.get_logger()
 
-from datetime import datetime
 import requests
 import threading
 
@@ -56,10 +55,9 @@ def worker():
         try:
             data = pa.api_call('list_controllers')
             for c in data:
-                i = c['oid']
                 s = 1 if c['connected'] else 0
-                q = f'{i} connected={s}'
-                logger.info(f'{datetime.now()} {q}')
+                q = f'{c["oid"]} connected={s}'
+                logger.info(q)
                 r = sess.post(
                     url=f'{flags.influx_path}/write?db={flags.influx_db}',
                     data=q,
