@@ -14,7 +14,9 @@ remote_lm:lm/NAME connected=1
 
 ## Plugin installation and configuration
 
-Download **cmon.py** and put it to *EVA_DIR/runtime/plugins*
+Download
+[cmon.py](https://raw.githubusercontent.com/alttch/eva-plugin-cmon/main/cmon.py)
+and put it to *EVA_DIR/runtime/plugins*
 
 To configure the plugin, exec:
 
@@ -22,4 +24,4 @@ To configure the plugin, exec:
 eva sfa edit plugin-config
 ```
 
-Configuration options: look header inside **cmon.py**
+Configuration options: read the header inside **cmon.py**
