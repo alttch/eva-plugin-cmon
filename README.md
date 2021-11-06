@@ -5,7 +5,7 @@ Controller status monitor plugin for [EVA ICS](https://www.eva-ics.com/)
 Monitors connected controllers status in SFA and pushes measurements into an
 external InfluxDB.
 
-Measurements look like:
+Measurements format:
 
 ```
 remote_uc:uc/NAME connected=1
