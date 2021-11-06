@@ -21,7 +21,7 @@ and put it to *EVA_DIR/runtime/plugins*
 To configure the plugin, exec:
 
 ```shell
-eva sfa edit plugin-config
+eva sfa edit plugin-config cmon
 ```
 
 Configuration options: read the header inside **cmon.py**
